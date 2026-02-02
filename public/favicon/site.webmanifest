@@ -1,0 +1,21 @@
+{
+  "name": "E-Perpus SMA Ki Hajar Dewantoro Kota Tangerang",
+  "short_name": "E-Perpus",
+  "icons": [
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#66bae3",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
