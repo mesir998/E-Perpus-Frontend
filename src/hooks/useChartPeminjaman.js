@@ -30,7 +30,7 @@ export const useChartPeminjaman = () => {
       try {
         const token = localStorage.getItem('token')
         const response = await axios.get(
-          `http://localhost:5000/api/peminjaman/chart-stats?year=${selectedYear}`,
+          `http://103.175.218.4/api/peminjaman/chart-stats?year=${selectedYear}`,
           { headers: { Authorization: `Bearer ${token}` } }
         )
 

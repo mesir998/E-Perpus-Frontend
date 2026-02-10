@@ -28,8 +28,8 @@ export const useFormTambahPeminjaman = () => {
       try {
         const headers = { Authorization: `Bearer ${token}` }
         const [muridRes, bukuRes] = await Promise.all([
-          axios.get('http://localhost:5000/api/murid', { headers }),
-          axios.get('http://localhost:5000/api/buku', { headers }),
+          axios.get('http://103.175.218.4/api/murid', { headers }),
+          axios.get('http://103.175.218.4/api/buku', { headers }),
         ])
 
         const dataMurid = Array.isArray(muridRes.data)
@@ -94,7 +94,7 @@ export const useFormTambahPeminjaman = () => {
         status_pinjam: 'dipinjam',
       }
 
-      await axios.post('http://localhost:5000/api/peminjaman', payload, {
+      await axios.post('http://103.175.218.4/api/peminjaman', payload, {
         headers: { Authorization: `Bearer ${token}` },
       })
 

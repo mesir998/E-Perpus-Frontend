@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback, useMemo } from 'react'
 import Swal from 'sweetalert2'
 import { io } from 'socket.io-client'
 
-const SOCKET_URL = 'http://localhost:5000'
+const SOCKET_URL = 'http://103.175.218.4/'
 
 export const useNotifications = (user, token) => {
   const [notifications, setNotifications] = useState([])
@@ -14,8 +14,8 @@ export const useNotifications = (user, token) => {
     const isAdmin = user.role === 'admin' || user.role_id === 3
 
     return isAdmin
-      ? 'http://localhost:5000/api/notifikasi/admin'
-      : 'http://localhost:5000/api/notifikasi'
+      ? 'http://103.175.218.4/api/notifikasi/admin'
+      : 'http://103.175.218.4/api/notifikasi'
   }, [user?.role, user?.role_id])
 
   const deduplicate = (arr) => {

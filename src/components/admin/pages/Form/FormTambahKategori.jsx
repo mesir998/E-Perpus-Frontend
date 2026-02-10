@@ -14,7 +14,7 @@ function FormTambahKategori() {
 
     try {
       await axios.post(
-        'http://localhost:5000/api/kategori',
+        'http://103.175.218.4/api/kategori',
         { nama_kategori: namaKategori },
         { headers: { Authorization: `Bearer ${token}` } }
       )

@@ -51,7 +51,7 @@ const BookDetailModal = ({ book, onClose }) => {
     cleanPath = cleanPath.replace('public/', '')
     if (cleanPath.startsWith('/')) cleanPath = cleanPath.substring(1)
     if (!cleanPath.startsWith('uploads/')) cleanPath = `uploads/${cleanPath}`
-    return `http://localhost:5000/${cleanPath}`
+    return `http://103.175.218.4/${cleanPath}`
   }
 
   // 🛠️ 2. 🔥 HELPER FORMAT RUPIAH

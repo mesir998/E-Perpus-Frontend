@@ -26,7 +26,7 @@ function BookCard({ buku, kategoriList }) {
       cleanPath = `uploads/${cleanPath}`
     }
 
-    return `http://localhost:5000/${cleanPath}`
+    return `http://103.175.218.4/${cleanPath}`
   }
 
   return (
