@@ -72,7 +72,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': 'https://apiprawira.my.id',
-      '/uploads': { target: 'https://apiprawira.my.id', changeOrigin: true },
+      '/uploads': 'https://apiprawira.my.id',
     },
   },
   resolve: {
